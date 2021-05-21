@@ -1,0 +1,33 @@
+.app-table{
+    @apply text-center p-8;
+}
+.app-table > div > h1{
+    @apply mb-12 text-center font-extrabold text-4xl;
+}
+.app-table > div > div> table {
+    @apply  m-auto;
+}
+.app-table > div > div > table > thead{
+    @apply border-b-2 border-gray-200;
+}
+.app-table > div > div > table > thead > tr > th{
+    @apply pb-4;
+}
+
+.app-table > div > div > table tr > td {
+    @apply w-64 p-2 capitalize;
+}
+.app-table > div > div > table tr:nth-child(even){
+    @apply bg-black bg-opacity-5;
+}
+.app-table > div > div > table tr > td >img{
+    @apply w-1/2 m-auto;
+}
+@media (max-width: 800px) {
+    .app-table > div > h1{
+        @apply text-3xl;
+    }
+    .app-table > div > div> table{
+        @apply text-base w-full ;
+    }
+}
